@@ -6,7 +6,33 @@ html
     link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Daily brief!
+          button.navbar-toggle(type='button', data-toggle='collapse', datatarget='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/features/') Preguntes Simples
+            li
+              a(href='/features/') Formularis Complets
+            li  
+              a(href='/features/') Petites Rifes
+            li  
+              a(href='/features/') Planificacions
+            li  
+              a(href='/features/') Decisions cotidianes
+            
+    .container
+      block content
+      footer
+      .row
+        .col-xs-12
+          small &copy; CustomBet 2016
 
     script(src='/bower_components/jquery/dist/jquery.min.js')
     script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
